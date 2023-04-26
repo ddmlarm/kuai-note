@@ -1,0 +1,117 @@
+* {
+	box-sizing: border-box;
+	font-family: system-ui;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	min-height: 100vh;
+	min-width: 100vh;
+}
+
+div {
+	border: 0.5px solid gray;
+	padding: var(--padding);
+	/* margin: 5px; */
+}
+
+.button {
+	align-items: center;
+	background-color: inherit;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+.button:hover {
+	background-color: var(--color-white);
+	filter: brightness(90%);
+}
+
+side-bar {
+	background-color: #F7F7F7;
+	border-right: 1px solid gray;
+	display: flex;
+	flex: 0 0 15vw;
+	flex-direction: column;
+	min-width: 200px;
+}
+
+main-content {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	gap: var(--gap);
+	padding: var(--row-padding) var(--row-padding) 0px var(--row-padding);
+}
+
+:root {
+	--background-color: #ffffff;
+	--foreground-color: #000000;
+
+	/* COLORS */
+	--color-white: #FFFFFF;
+	--color-gray-1: #E6E6E6;
+	--color-gray-2: #CCCCCC;
+	--color-gray-3: #B3B3B3;
+	--color-gray-4: #999999;
+	--color-gray-5: #808080;
+	--color-gray-6: #666666;
+	--color-gray-7: #4D4D4D;
+	--color-gray-8: #333333;
+	--color-gray-9: #1A1A1A;
+	--color-black: #000000;
+
+
+	--color-red: #FF0000;
+	--color-orange: #FF8000;
+	--color-yellow: #FFFF00;
+	--color-chartreuse: #80FF00;
+	--color-green: #00FF00;
+	--color-spring-green: #00FF80;
+	--color-cyan: #00FFFF;
+	--color-dodger-blue: #0080FF;
+	--color-blue: #0000FF;
+	--color-purple: #8000FF;
+	--color-magenta: #FF00FF;
+	--color-pink: #FF0080;
+
+	/* --color-red: #800000;
+	--color-orange: #804000;
+	--color-yellow: #808000;
+	--color-chartreuse: #408000;
+	--color-green: #008000;
+	--color-spring-green: #008040;
+	--color-cyan: #008080;
+	--color-dodger-blue: #004080;
+	--color-blue: #000080;
+	--color-purple: #400080;
+	--color-magenta: #800080;
+	--color-pink: #800040; */
+
+
+	--gap: 10px;
+	--padding: 10px;
+	--row-padding: 15px;
+
+	--side-bar-width: 0 0 20vw;
+	--stretch-width-flex: 0 0 2vw;
+
+	--index-notes-padding: 50px;
+
+	/* Explorer */
+
+	/* Index Folders */
+
+	/* Index Search Bar */
+
+	/* Index Tags */
+
+	/* Index Notes */
+}

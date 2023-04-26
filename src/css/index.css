@@ -1,0 +1,299 @@
+@import "style.css";
+
+/* INDEX EXPLORER OPTIONS */
+
+#index-explorer-panel {
+	align-items: center;
+	display: flex;
+	justify-content: end;
+	gap: var(--gap);
+	padding: var(--row-padding) var(--row-padding) 0px var(--row-padding);
+}
+
+/* INDEX FOLDERS */
+
+#index-folders {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	gap: var(--gap);
+	padding: var(--row-padding) var(--row-padding) 0px var(--row-padding);
+}
+
+#index-folders>index-folder {
+	align-items: center;
+	cursor: default;
+	display: flex;
+	flex-direction: row;
+	gap: var(--gap);
+	justify-content: start;
+	position: relative;
+}
+
+#index-folders>index-folder.hidden {
+	display: none;
+	margin-left: 10px;
+}
+
+#index-folders>index-folder>expand-folder {
+	align-items: center;
+	/* display: flex; */
+	justify-content: center;
+	padding: 5px;
+}
+
+#index-folders>index-folder>filter-folder {
+	/* display: flex; */
+	flex: 1;
+	max-height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	padding: 5px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#index-folders>index-folder:hover {
+	background-color: var(--color-white);
+	border-radius: 5px;
+	filter: brightness(90%);
+}
+
+/* INDEX FOLDERS: RIGHT-CLICK */
+
+#folder-context {
+	align-items: stretch;
+	background-color: var(--color-white);
+	border: 0.5px solid gray;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	height: fit-content;
+	position: fixed;
+	width: max-content;
+}
+
+#folder-context>menu-option {
+	align-items: center;
+	background-color: var(--color-white);
+	border-radius: 10px;
+	cursor: default;
+	display: flex;
+	flex-direction: row;
+	gap: var(--gap);
+	justify-content: stretch;
+	padding: var(--padding);
+}
+
+#folder-context>menu-option>option-label {
+	background-color: var(--color-white);
+	max-height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	padding-right: 32px;
+	text-overflow: ellipsis;
+}
+
+#folder-context>menu-option:hover {
+	background-color: var(--color-white);
+	filter: brightness(90%);
+}
+
+
+/* INDEX SEARCH BAR */
+
+#search-options {
+	display: flex;
+	gap: var(--gap);
+	padding: var(--row-padding) var(--row-padding) 0px var(--row-padding);
+}
+
+#search-options>sort-notes {
+	border: 0.5px solid gray;
+	padding: var(--padding);
+}
+
+#search-options>notes-view {
+	border: 0.5px solid gray;
+	padding: var(--padding);
+}
+
+#search-options>#search-bar {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 200px;
+	position: relative;
+}
+
+#search-options>#search-bar>input {
+	border: 0.5px solid gray;
+	padding: 0.75em;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#search-options>#search-bar>#search-suggestions {
+	display: none;
+}
+
+
+/* INDEX TAGS */
+
+#index-tags {
+	border-bottom: 1px solid gray;
+	display: flex;
+	gap: 0.75em;
+	overflow-x: hidden;
+	padding: var(--row-padding);
+}
+
+#index-tags>index-tag {
+	background-color: #eeeeee;
+	border: 0.5px solid #dddddd;
+	border-radius: 1.25em;
+	padding: 0.50em 1em;
+}
+
+/* #index-tags>index-tag:hover {
+	filter: brightness(90%);
+} */
+
+/* INDEX NOTES */
+
+#index-notes {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	gap: var(--gap);
+	padding: var(--index-notes-padding);
+}
+
+#index-notes>index-note {
+	border: 0.5px solid gray;
+	border-radius: 0.5em;
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+	padding: 20px;
+}
+
+#index-notes>index-note:hover {
+	background-color: var(--color-white);
+	filter: brightness(90%);
+}
+
+#index-notes>index-note.hidden {
+	display: none;
+}
+
+#index-notes>index-note>note-details {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#index-notes>index-note>note-details>note-title {
+	display: flex;
+	font-size: 1.5em;
+	padding: var(--padding);
+}
+
+#index-notes>index-note>note-details>note-folder {
+	color: #666666;
+	display: flex;
+	padding: var(--padding);
+}
+
+#index-notes>index-note>note-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75em;
+}
+
+#index-notes>index-note>note-tags>note-tag {
+	background-color: #eeeeee;
+	border: 0.5px solid #dddddd;
+	border-radius: 1.25em;
+	padding: 0.50em 1em;
+}
+
+#index-notes>index-note>note-date {
+	color: #666666;
+	display: flex;
+	justify-content: end;
+}
+
+/* INDEX NOTES: RIGHT CLICK */
+
+#note-context {
+	align-items: stretch;
+	background-color: var(--color-white);
+	border: 0.5px solid gray;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	height: fit-content;
+	position: fixed;
+	width: max-content;
+}
+
+#note-context>menu-option {
+	align-items: center;
+	background-color: var(--color-white);
+	border-radius: 10px;
+	cursor: default;
+	display: flex;
+	flex-direction: row;
+	gap: var(--gap);
+	justify-content: stretch;
+	padding: var(--padding);
+}
+
+#note-context>menu-option>option-label {
+	background-color: var(--color-white);
+	max-height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	padding-right: 32px;
+	text-overflow: ellipsis;
+}
+
+#note-context>menu-option:hover {
+	background-color: var(--color-white);
+	filter: brightness(90%);
+}
+
+#note-context>delete-option {
+	align-items: center;
+	background-color: var(--color-white);
+	border-radius: 10px;
+	cursor: default;
+	display: flex;
+	flex-direction: row;
+	gap: var(--gap);
+	justify-content: stretch;
+	padding: var(--padding);
+}
+
+#note-context>delete-option>option-label {
+	background-color: var(--color-white);
+	max-height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	padding-right: 32px;
+	text-overflow: ellipsis;
+}
+
+#note-context>delete-option:hover {
+	background-color: var(--color-white);
+	filter: brightness(90%);
+}
+
+/* HOVER ELEMENTS */
+
+
+
+/* HIDDEN CLASSES */

@@ -1,0 +1,26 @@
+{
+	"202336371816900": {
+		"indexID": "202336371816900",
+		"title": "A Note",
+		"date": "DATE FORMAT",
+		"folderName": "New Folder",
+		"path": "C: PATH ",
+		"tags": [
+			"Tag 1",
+			"Tag 2"
+		],
+		"parentFolderID": "000000000000000"
+	},
+	"202336373060000": {
+		"indexID": "202336373060000",
+		"title": "Z Note",
+		"date": "DATE FORMAT",
+		"folderName": "New Folder",
+		"path": "C: PATH ",
+		"tags": [
+			"Tag 1",
+			"Tag 3"
+		],
+		"parentFolderID": "000000000000000"
+	}
+}

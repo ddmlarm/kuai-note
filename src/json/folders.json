@@ -1,0 +1,11 @@
+{
+"000000000000000": {"indexID":"000000000000000","folderName":"ABC Folder","folders":["202304162047130153"],"notes":[],"parentFolderID":"root"},
+"202304162047130153": {"indexID":"202304162047130153","folderName":"New Folder","folders":[],"notes":[],"parentFolderID":"000000000000000"},
+"202304162104010032": {"indexID":"202304162104010032","folderName":"ZYX Folder","folders":["202304162105260346","202304162251240481"],"notes":[],"parentFolderID":"root"},
+"202304162105260346": {"indexID":"202304162105260346","folderName":"Z Folder","folders":["202304162105300263"],"notes":[],"parentFolderID":"202304162104010032"},
+"202304162105300263": {"indexID":"202304162105300263","folderName":"New Folder","folders":[],"notes":[],"parentFolderID":"202304162105260346"},
+"202304162251240481": {"indexID":"202304162251240481","folderName":"A Folder","folders":[],"notes":[],"parentFolderID":"202304162104010032"},
+"202304162320160845": {"indexID":"202304162320160845","folderName":"MNO Folder","folders":["202304162322090953"],"notes":[],"parentFolderID":"root"},
+"202304162322090953": {"indexID":"202304162322090953","folderName":"New Folder","folders":[],"notes":[],"parentFolderID":"202304162320160845"},
+"202304162341430918": {"indexID":"202304162341430918","folderName":"New Folder","folders":[],"notes":[],"parentFolderID":"root"}
+}
